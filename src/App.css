@@ -1,0 +1,97 @@
+.container {
+  background: linear-gradient(180deg, #4568DC 0%, #B06AB3 100%);
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btnnum{
+  border: 1px solid rgba(221, 221, 221, 1);
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+}
+.App-header {
+  background-color: white;
+  width: 400px;
+  min-height: 60vh;
+  
+  font-size: calc(10px + 2vmin);
+ 
+  color: white;
+}
+
+.numsDiv{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap:wrap ;
+  margin: 5%;  
+  position: relative;
+}
+.numsDiv:after {
+  content:'';
+  width:100%;
+  order:0;
+}
+.btnResult{
+  order:1;
+  color:rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 20px;
+  padding: 14px 14px;
+  margin:30px auto ;
+
+}
+.descrP1,.descrP2{
+  font-family: "Roboto", sans-serif;
+  color: black;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+.descrP1::after{
+  font-family: "Roboto", sans-serif;
+  content: 'Отметьте 8 чисел.';
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color:rgb(59, 59, 59);
+  padding-left: 10px;
+}
+.descrP2::after{
+  font-family: "Roboto", sans-serif;
+  content: 'Отметьте 2 числа.';
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color:rgb(59, 59, 59);
+  padding-left: 10px;
+}
+.btnnum:hover{
+  background-color:  rgba(255, 210, 5, 1) !important;
+  border: none;
+}
+.bilH2{
+  font-family: "Roboto", sans-serif;
+  padding: 0 0;
+  margin: 0 0;
+  color: black;
+  font-size: 16px;
+  line-height: 22px;
+}
+.descrStatus{
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 400;
+}

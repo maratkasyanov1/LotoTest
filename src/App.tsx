@@ -6,17 +6,14 @@ import { resultCheck,generatenum } from './FnS/functions';
 import { uniqnumbers } from './FnS/functions';
 import Magicwand from './img/magic-wand.png';
 function App() {
- 
-
   useEffect(() => {
-    const arr2:any[] = generatenum(19)
-    console.log(arr2)
+    const arr2:number[] = generatenum(19)
   }, [])
   const [status, setstatus] = useState([false, false])
   const [nums8,] = useState(generatenum(19))
   const [nums2,] = useState(generatenum(3))
-  const [selected8, setselected8]: any[] = useState([])
-  const [selected2, setselected2]: any[] = useState([])
+  const [selected8, setselected8]: number[] = useState([])
+  const [selected2, setselected2]: number[] = useState([])
   const [result,] = useState([uniqnumbers(nums8), Array.from({ length: 1 }, () => nums2[Math.floor(Math.random() * nums2.length)])])
  
   function HandleMAgicWand() {
